@@ -1,0 +1,24 @@
+{
+  "name": "async-youtube-video",
+  "version": "1.0.0",
+  "description": "Simple async youtube video loader",
+  "main": "async-youtube-video.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darrynten/async-youtube-video.git"
+  },
+  "keywords": [
+    "async",
+    "youtube",
+    "video",
+    "asynchronous",
+    "javascript",
+    "google"
+  ],
+  "author": "Darryn Ten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darrynten/async-youtube-video/issues"
+  },
+  "homepage": "https://github.com/darrynten/async-youtube-video#readme"
+}
