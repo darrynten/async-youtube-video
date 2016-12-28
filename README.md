@@ -5,9 +5,13 @@ Attach a YouTube video to an element asynchronously.
 
 ## Usage
 
+`npm install --save-dev async-youtube-video`
+
+Include the script on your page
+
 Insert an element with class `youtube-iframe-video` into your DOM
 
-NB This element will be replaced with the iframe, so ensure you have a wrapping
+**NB** This element will be replaced with the iframe, so ensure you have a wrapping
 element in your DOM so you can control it.
 
 ```html
