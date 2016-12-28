@@ -62,20 +62,21 @@ asyncYoutubeVideo = (function() {
       this.origin = options.origin;
 
       // optional
-      this.controls = options.controls ? options.controls : this.controls;
-      this.autoplay = options.autoplay ? options.autoplay : this.autoplay;
-      this.disablekb = options.disablekb ? options.disablekb : this.disablekb;
-      this.fs = options.fs ? options.fs : this.fs;
-      this.rel = options.rel ? options.rel : this.rel;
-      this.modestbranding = options.modestbranding ? options.modestbranding : this.modestbranding;
-      this.playsinline = options.playsinline ? options.playsinline : this.playsinline;
-      this.showinfo = options.showinfo ? options.showinfo : this.showinfo;
-      this.mute = options.mute ? options.mute : this.mute;
-      this.loop = options.loop ? options.loop : this.loop;
+      this.controls = typeof options.controls ? options.controls : this.controls;
+      this.autoplay = typeof options.autoplay ? options.autoplay : this.autoplay;
+      this.disablekb = typeof options.disablekb ? options.disablekb : this.disablekb;
+      this.fs = typeof options.fs ? options.fs : this.fs;
+      this.rel = typeof options.rel ? options.rel : this.rel;
+      this.modestbranding = typeof options.modestbranding ? options.modestbranding : this.modestbranding;
+      this.playsinline = typeof options.playsinline ? options.playsinline : this.playsinline;
+      this.showinfo = typeof options.showinfo ? options.showinfo : this.showinfo;
+      this.mute = typeof options.mute ? options.mute : this.mute;
+      this.loop = typeof options.loop ? options.loop : this.loop;
 
       if (options.additionalClasses) {
         this.additionalClasses = options.additionalClasses;
       }
+      console.log([this], [options]);
 
       // Make an iframe
       this.createElement();
