@@ -25,20 +25,20 @@ Then initialise
 ```js
 window.onload = function() {
   asyncYoutubeVideo.init({
-    'targetClass': 'youtube-iframe-video',
-    'videoId': 'Srmdij0CU1U',
-    'controls': 1,
-    'autoplay': 1,
-    'disablekb': 1,
-    'fs': 0,
-    'modestbranding': 1,
-    'playsinline': 1,
-    'showinfo': 0,
-    'origin': 'example.com',
-    'additionalClasses': 'test-video some-class',
-    'rel': 0,
-    'mute': 1,
-    'loop': 1
+    targetClass: 'youtube-iframe-video',
+    videoId: 'Srmdij0CU1U',
+    controls: 1,
+    autoplay: 1,
+    disablekb: 1,
+    fs: 0,
+    modestbranding: 1,
+    playsinline: 1,
+    showinfo: 0,
+    origin: 'example.com',
+    additionalClasses: 'test-video some-class',
+    rel: 0,
+    mute: 1,
+    loop: 1
   });
 }
 ```
@@ -50,7 +50,7 @@ Required options are `videoId`, `origin` and `targetClass`.
 Will render
 
 ```html
-<iframe id="async-youtube-video" src="//www.youtube.com/embed/Srmdij0CU1U?enablejsapi=1&amp;controls=1&amp;autoplay=1&amp;disablekb=1&amp;fs=1&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=1&amp;loop=1&amp;origin=http://dev.apolitical.co" frameborder="0" type="text/html" class="test-video some-class async-youtube-video"></iframe>
+<iframe id="async-youtube-video" src="//www.youtube.com/embed/Srmdij0CU1U?enablejsapi=1&amp;controls=1&amp;autoplay=1&amp;disablekb=1&amp;fs=1&amp;rel=0&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=1&amp;loop=1&amp;origin=http://example.com" frameborder="0" type="text/html" class="test-video some-class async-youtube-video"></iframe>
 ```
 
 The options map to [YouTube API](https://developers.google.com/youtube/player_parameters) names for ease of reference.

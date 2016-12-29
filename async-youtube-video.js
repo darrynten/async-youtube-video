@@ -150,6 +150,7 @@ asyncYoutubeVideo = (function() {
     loadPlayer: function() {
       // https://developers.google.com/youtube/player_parameters?playerVersion=HTML5#autoplay
       this.videoPlayer = new YT.Player('async-youtube-video', {
+        videoId: this.videoId,
         playerVars: {
           enablejsapi: 1,
           controls: this.controls,
@@ -161,12 +162,11 @@ asyncYoutubeVideo = (function() {
           playsinline: this.playsinline,
           showinfo: this.showinfo,
           origin: this.origin,
-          videoId: this.videoId,
           loop: this.loop
         },
         events: {
-          'onReady': this.onPlayerReady,
-          'onStateChange': this.onPlayerStateChange
+          onReady: this.onPlayerReady,
+          onStateChange: this.onPlayerStateChange
         }
       });
     },
